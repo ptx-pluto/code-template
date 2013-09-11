@@ -1,0 +1,47 @@
+{
+    'manifest_version': 2,
+    'name': 'Chrome Downloader',
+    'version': '0.0.1',
+    'description': 'Find download links in the page',
+
+    'icon': {
+	'128': '128.png',
+	'256': '256.png',
+    },
+
+
+    'minimal-chrome-version': '16',
+
+    'browser_action': {
+	'default_icon': '',
+	'default_title': '',
+	'default_popup': '',
+    },
+
+    'background':{
+	'scripts': ['index.js','other.js']
+	'page': '',
+    },
+
+    'option_page': '',
+    
+    'permissions': [
+	'contextMenus',
+	'tabs',
+	'cookies',
+	'*://*.google.*',
+    ],
+    
+    'content_scripts': [
+	{
+	    'matches': ['<all_urls>'],
+	    'exclude_matches': [],
+	    'js': [],
+	    'run_at': 'document_start',
+	    'all_frames': false,
+	}
+
+    ],
+    
+
+}
