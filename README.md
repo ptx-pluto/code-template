@@ -6,6 +6,7 @@ These are my code templates
 Index
 ------
 
-* [Chrome Extension Manifest] /manifest.json
-* [HTML5 Page] /index.html
-* [Browser Content Script] /userscript-template.user.js
+* [HTML5 Page] - /web/index.html
+* [Require.js] - /web/main.js
+* [Chrome Extension Manifest] - /chrome/manifest.json
+* [Browser Content Script] - /chrome/userscript-template.user.js
